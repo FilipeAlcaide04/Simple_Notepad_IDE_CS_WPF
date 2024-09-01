@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SyntaxDefinition name="CustomC/C++/C#" extensions=".c;.cpp;.cs" xmlns="http://icsharpcode.net/sharpdevelop/syntaxdefinition/2008">
+
+	<!-- Color definitions -->
+	<Color name="Keyword" foreground="#FF79C6" />
+	<!-- Vibrant Pink -->
+
+	<Color name="Comment" foreground="#8BE9FD" />
+	<!-- Light Cyan -->
+
+	<Color name="String" foreground="#F1FA8C" />
+	<!-- Bright Yellow -->
+
+	<Color name="Number" foreground="#FFB86C" />
+	<!-- Warm Orange -->
+
+	<Color name="Type" foreground="#BD93F9" />
+	<!-- Light Purple -->
+
+	<Color name="Operator" foreground="#50FA7B" />
+	<!-- Bright Green -->
+
+	<!-- Syntax rules -->
+	<RuleSet>
+		<!-- Single-line comments -->
+		<Span color="Comment">
+			<Begin>//</Begin>
+			<End>$</End>
+		</Span>
+
+		<!-- Multi-line comments -->
+		<Span color="Comment" multiline="true">
+			<Begin>/\*</Begin>
+			<End>\*/</End>
+		</Span>
+
+		<!-- Strings -->
+		<Span color="String">
+			<Begin>"</Begin>
+			<End>"</End>
+		</Span>
+		<Span color="String">
+			<Begin>'</Begin>
+			<End>'</End>
+		</Span>
+
+		<!-- Numbers -->
+		<Span color="Number">
+			<Begin>\b\d+(\.\d*)?\b</Begin>
+			<End> </End>
+		</Span>
+
+		<!-- Keywords -->
+		<Keywords color="Keyword">
+			<!-- C/C++ -->
+			<Word>template</Word>
+			<Word>namespace</Word>
+			<Word>friend</Word>
+			<Word>public</Word>
+			<Word>private</Word>
+			<Word>protected</Word>
+			<Word>virtual</Word>
+			<Word>override</Word>
+			<Word>final</Word>
+			<Word>const_cast</Word>
+			<Word>dynamic_cast</Word>
+			<Word>static_cast</Word>
+			<Word>reinterpret_cast</Word>
+			<Word>sizeof</Word>
+			<Word>alignas</Word>
+			<Word>alignof</Word>
+			<Word>decltype</Word>
+			<Word>auto</Word>
+			<Word>nullptr</Word>
+			<Word>explicit</Word>
+			<Word>volatile</Word>
+			<Word>operator</Word>
+			<Word>this</Word>
+			<Word>typeid</Word>
+			<Word>asm</Word>
+			<Word>catch</Word>
+			<Word>throw</Word>
+			<Word>noexcept</Word>
+			<Word>export</Word>
+			<Word>const</Word>
+			<Word>break</Word>
+			<Word>case</Word>
+			<Word>continue</Word>
+			<Word>default</Word>
+			<Word>do</Word>
+			<Word>enum</Word>
+			<Word>extern</Word>
+			<Word>goto</Word>
+			<Word>inline</Word>
+			<Word>register</Word>
+			<Word>restrict</Word>
+			<Word>static</Word>
+			<Word>struct</Word>
+			<Word>switch</Word>
+			<Word>typedef</Word>
+			<Word>union</Word>
+			<Word>while</Word>
+			<Word>if</Word>
+			<Word>else</Word>
+			<Word>return</Word>
+			<Word>printf</Word>
+			<Word>scanf</Word>
+			<Word>fprintf</Word>
+			<Word>fscanf</Word>
+			<Word>sprintf</Word>
+			<Word>sscanf</Word>
+			<Word>cin</Word>
+			<Word>cout</Word>
+			<Word>cerr</Word>
+			<Word>clog</Word>
+			<Word>getline</Word>
+			<Word>endl</Word>
+			<Word>sizeof</Word>
+			<Word>typedef</Word>
+			<Word>alignof</Word>
+			<Word>alignas</Word>
+			<Word>noexcept</Word>
+			<Word>nullptr</Word>
+			<Word>decltype</Word>
+			<Word>#include</Word>
+			<!-- C# -->
+			<Word>async</Word>
+			<Word>await</Word>
+			<Word>dynamic</Word>
+			<Word>var</Word>
+			<Word>default</Word>
+			<Word>lock</Word>
+			<Word>fixed</Word>
+			<Word>is</Word>
+			<Word>as</Word>
+			<Word>where</Word>
+			<Word>yield</Word>
+			<Word>delegate</Word>
+			<Word>partial</Word>
+			<Word>event</Word>
+			<Word>object</Word>
+			<Word>base</Word>
+			<Word>null</Word>
+			<Word>out</Word>
+			<Word>in</Word>
+			<Word>ref</Word>
+			<Word>unchecked</Word>
+			<Word>checked</Word>
+			<Word>Console</Word>
+			<Word>Write</Word>
+			<Word>WriteLine</Word>
+			<Word>ReadLine</Word>
+			<Word>Read</Word>
+			<Word>Print</Word>
+			<Word>Debug</Word>
+			<Word>Assert</Word>
+			<Word>ToString</Word>
+			<Word>Parse</Word>
+			<Word>TryParse</Word>
+			<Word>Task</Word>
+			<Word>async</Word>
+			<Word>await</Word>
+			<Word>static</Word>
+			<Word>partial</Word>
+			<Word>override</Word>
+			<Word>abstract</Word>
+			<Word>class</Word>
+			<Word>interface</Word>
+			<Word>struct</Word>
+			<Word>enum</Word>
+			<Word>namespace</Word>
+			<Word>using</Word>
+			<Word>{</Word>
+			<Word>}</Word>
+		</Keywords>
+
+		<!-- Types -->
+		<Keywords color="Type">
+			<Word>string</Word>
+			<Word>bool</Word>
+			<Word>decimal</Word>
+			<Word>object</Word>
+			<Word>int</Word>
+			<Word>float</Word>
+			<Word>double</Word>
+			<Word>char</Word>
+			<Word>void</Word>
+			<Word>long</Word>
+			<Word>short</Word>
+			<Word>unsigned</Word>
+			<Word>size_t</Word>
+			<Word>wchar_t</Word>
+			<Word>byte</Word>
+			<Word>sbyte</Word>
+			<Word>uint</Word>
+			<Word>ulong</Word>
+			<Word>ushort</Word>
+			<Word>int8_t</Word>
+			<Word>int16_t</Word>
+			<Word>int32_t</Word>
+			<Word>int64_t</Word>
+			<Word>uint8_t</Word>
+			<Word>uint16_t</Word>
+			<Word>uint32_t</Word>
+			<Word>uint64_t</Word>
+			<Word>ptrdiff_t</Word>
+			<Word>intptr_t</Word>
+			<Word>uintptr_t</Word>
+			<Word>float32</Word>
+			<Word>float64</Word>
+		</Keywords>
+
+	</RuleSet>
+</SyntaxDefinition>

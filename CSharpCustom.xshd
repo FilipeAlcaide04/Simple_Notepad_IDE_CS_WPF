@@ -1,0 +1,31 @@
+<SyntaxDefinition xmlns="http://icsharpcode.net/sharpdevelop/syntaxdefinition/2008">
+	<Rules>
+		<!-- Define a rule for comments -->
+		<Rule Set="Comment" Color="#6A9955">
+			<Regex>//.*</Regex>
+		</Rule>
+		<!-- Define a rule for keywords -->
+		<Rule Set="Keyword" Color="#569CD6">
+			<Regex>\b(?:abstract|as|base|break|class|const|continue|default|delegate|do|double|else|enum|event|explicit|extern|finally|fixed|float|for|foreach|goto|if|implicit|in|interface|internal|is|lock|long|namespace|new|null|object|operator|out|override|params|private|protected|public|readonly|ref|return|sbyte|sealed|short|sizeof|static|string|struct|switch|this|throw|try|typeof|uint|ulong|ushort|using|virtual|void|volatile|while)\b</Regex>
+		</Rule>
+		<!-- Define a rule for strings -->
+		<Rule Set="String" Color="#D69D85">
+			<Regex>"[^"]*"</Regex>
+		</Rule>
+		<!-- Define a rule for numbers -->
+		<Rule Set="Number" Color="#B5CEA8">
+			<Regex>\b\d+(\.\d+)?\b</Regex>
+		</Rule>
+		<!-- Define a rule for keywords -->
+		<Rule Set="Identifier" Color="#9CDCFE">
+			<Regex>\b\w+\b</Regex>
+		</Rule>
+	</Rules>
+	<Sets>
+		<Set Name="Comment" />
+		<Set Name="Keyword" />
+		<Set Name="String" />
+		<Set Name="Number" />
+		<Set Name="Identifier" />
+	</Sets>
+</SyntaxDefinition>

@@ -1,0 +1,43 @@
+﻿<SyntaxDefinition name="CustomC/C++" extensions=".c;.cpp">
+	<Color name="Keyword" foreground="#FF569CD6" />
+	<Color name="Comment" foreground="#FF6A9955" />
+	<Color name="String" foreground="#FFD69D85" />
+	<Color name="Number" foreground="#FFB5CEA8" />
+
+	<RuleSet>
+		<Span color="Comment">
+			<Begin>//</Begin>
+			<End>$</End>
+		</Span>
+		<Span color="Comment" multiline="true">
+			<Begin>/\*</Begin>
+			<End>\*/</End>
+		</Span>
+		<Span color="String">
+			<Begin>"</Begin>
+			<End>"</End>
+		</Span>
+		<Span color="String">
+			<Begin>'</Begin>
+			<End>'</End>
+		</Span>
+		<Words color="Keyword">
+			<Word>int</Word>
+			<Word>float</Word>
+			<Word>double</Word>
+			<Word>char</Word>
+			<Word>void</Word>
+			<Word>if</Word>
+			<Word>else</Word>
+			<Word>for</Word>
+			<Word>while</Word>
+			<Word>return</Word>
+			<Word>switch</Word>
+			<Word>case</Word>
+			<!-- Add more keywords as needed -->
+		</Words>
+		<Rule color="Number">
+			\b\d+(\.\d+)?\b
+		</Rule>
+	</RuleSet>
+</SyntaxDefinition>
